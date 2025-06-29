@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contrato de Locação de Imóvel</title>
+  <link rel="stylesheet" href="estilo.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Coleta de dados: Contrato de Locação de Imóvel</h1>
+  <form id="formContrato">
+    <fieldset>
+      <b><legend>Dados do Vendedor (a)</legend></b>
+      <label>Nome: <input type="text" id="nomeLocador" required autocomplete="off"></label><br>
+      <label>CPF: <input type="text" id="cpfLocador" required autocomplete="off"></label><br>
+      <label>Endereço: <input type="text" id="enderecoLocador" required autocomplete="off"></label>
+      <label>Data da Locação Inicial: <input type="text" id="dataLocacao" required autocomplete="off"></label>
+      <label>Data da Locação Final: <input type="text" id="dataFinal" required autocomplete="off"></label>
+    </fieldset>
+
+    <fieldset>
+      <b><legend>Dados do Comprador (a)</legend></b>
+      <label>Nome: <input type="text" id="nomeLocatario" required autocomplete="off"></label><br>
+      <label>CPF: <input type="text" id="cpfLocatario" required autocomplete="off"></label><br>
+      <label>Endereço: <input type="text" id="enderecoLocatario" required autocomplete="off"></label>
+    </fieldset>
+
+    <fieldset>
+      <b><legend>Dados da Testemunha 01</legend></b>
+      <label>Nome: <input type="text" id="nomeTestemunha01" required autocomplete="off"></label><br>
+      <label>CPF: <input type="text" id="cpfTestemunha01" required autocomplete="off"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <b><legend>Dados da Testemunha 02</legend></b>
+      <label>Nome: <input type="text" id="nomeTestemunha02" required autocomplete="off"></label><br>
+      <label>CPF: <input type="text" id="cpfTestemunha02" required autocomplete="off"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <b><legend>Detalhes do Imóvel Obejto da Locação:</legend></b>
+      
+      <label>Endereço do Imóvel: <input type="text" id="enderecoImovel" required autocomplete="off"></label><br>
+
+      <label>Loteamento: <input type="text" id="loteamentoBairro" required autocomplete="off"></label><br>
+
+      <label>Quadra: <input type="text" id="numeroQuadra" required autocomplete="off"></label><br>
+
+      <label>Lote: <input type="text" id="numeroLote" required autocomplete="off"></label><br>
+   
+      <label>Área do Lote (m²): <input type="text" id="areaLote" required autocomplete="off"></label><br>
+  
+      <label>Área Edificada (m²): <input type="text" id="areaEdificada" required autocomplete="off"></label><br>
+  
+      <label>Valor: <input type="number" id="valorAluguel" required autocomplete="off"></label><br>
+
+      <label>Forma de Pagamento: <input type="text" id="formaPagamentoAluguel" required autocomplete="off"></label>
+    </fieldset>
+
+    <button type="submit">Gerar Contrato</button>
+  </form>
+
+  <div id="contratoGerado" style="display:none;">
+    <div id="conteudoContrato"></div>
+    <button id="baixarPDF" type="button">Baixar PDF</button>
+  </div>
+
+   <center>
+        <i>
+        <footer>
+            <p>Web programa desenvolvido por Juliano <img src="https://d1yei2z3i6k35z.cloudfront.net/6946809/65e45ac72773e_zanoni.1.png" alt="Logo de Juliano Zanoni"></p>
+        </footer>
+        </i>
+    </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
