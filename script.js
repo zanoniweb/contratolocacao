@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <p>4. CONDIÇÕES DE ENTREGA E DEVOLUÇÃO DO IMÓVEL: O imóvel é entregue ao LOCATÁRIO em perfeitas condições de uso, com todos os sistemas (elétrico, hidráulico, etc.) e acessórios (portas, janelas, louças, etc.) em pleno funcionamento. O LOCATÁRIO se obriga a restituir o imóvel, ao final da locação, no mesmo estado em que o recebeu, salvo as deteriorações decorrentes do uso normal.</p>
     
-    <p> 5. DESPESAS E ENCARGOS: Todas as despesas de consumo (água, luz, gás, telefone, internet), condomínio, IPTU e demais taxas e tributos que recaírem sobre o imóvel durante o período de locação serão de responsabilidade do (a) LOCATÁRIO (A) ${nomeLocador} - CPF: ${cpfLocador}, conforme acordado entre as partes.</p>
+    <p> 5. DESPESAS E ENCARGOS: Todas as despesas de consumo (água, luz, gás, telefone, internet), condomínio, IPTU e demais taxas e tributos que recaírem sobre o imóvel durante o período de locação serão de responsabilidade do (a) LOCATÁRIO (A) ${nomeLocatario} - CPF: ${cpfLocatario}, conforme acordado entre as partes.</p>
    
     <p> 6. MULTA POR ATRASO E DESCUMPRIMENTO: Em caso de atraso no pagamento do aluguel, o LOCATÁRIO pagará multa de [percentual]% sobre o valor do aluguel, acrescido de juros de [percentual]% ao mês. Em caso de descumprimento de qualquer outra cláusula deste contrato, a parte infratora pagará multa equivalente a [valor da multa, ex: três aluguéis], além de eventuais perdas e danos.</p>
    
